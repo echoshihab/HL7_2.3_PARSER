@@ -3,7 +3,7 @@ from seg_parsers import MSHparser, PIDparser, PV1parser, ORCparser, OBRparser, O
 
 textFile = open("parsedFile.txt", "wt")
 
-with open('lorem.txt', 'rt') as myfile:
+with open('HL7sample.txt', 'rt') as myfile:
     for line in myfile:
         if line.startswith('MSH'):
             MSHparser(line, textFile)
